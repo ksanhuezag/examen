@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    {% if nombre %}
+        <h2>Compra realizada por: {{ nombre }}</h2>
+        <p>Total sin descuento: ${{ total_sin_descuento }}</p>
+        <p>Total a pagar con descuento: ${{ total_con_descuento }}</p>
+    {% else %}
+        <h1>Ejercicio 1 - Compra de Tarros de Pintura</h1>
+        <form action="/ejercicio1" method="post">
+            Nombre: <input type="text" name="nombre"><br>
+            Edad: <input type="number" name="edad"><br>
+            Cantidad de tarros: <input type="number" name="cantidad_tarros"><br>
+            <input type="submit" value="Calcular">
+        </form>
+    {% endif %}
+    <a href="/">Volver al inicio</a>
+</body>
+</html>

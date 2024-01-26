@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: center; /* Alineación central para los elementos */
+}
+
+h1 {
+    color: black; /* Cambiar según sea necesario */
+}
+
+/* Estilos para los botones */
+.button {
+    display: inline-block; /* Hace que los botones se alineen horizontalmente */
+    font-size: 16px;
+    padding: 20px 40px; /* Tamaño del botón */
+    margin: 20px;
+    text-decoration: none; /* Elimina el subrayado del texto */
+    color: white; /* Color del texto */
+    border-radius: 10px; /* Esquinas redondeadas para los botones */
+    transition: background-color 0.3s; /* Transición suave para el color de fondo */
+}
+
+/* Colores individuales para cada botón */
+#ejercicio1 {
+    background-color: #FF00FF; /* Color magenta para el botón */
+}
+
+#ejercicio2 {
+    background-color: #00FF00; /* Color verde para el botón */
+}
+
+/* Cambio de color al pasar el ratón por encima */
+.button:hover {
+    opacity: 0.9; /* Hace el botón ligeramente transparente */
+}
